@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #66CDAD;
+    --secondary-color: #F8D12A;
+    --background-color: #FEFEFC;
+    --text-color: #1E1507;
+    --heading-color: #66CDAD;
+
+    font-family: 'merriweather', sans-serif;
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;     /* Center the content */
+    padding: 20px;
+  }
