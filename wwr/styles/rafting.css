@@ -1,97 +1,100 @@
 :root {
   --background-color: #f8f9fa;
-  --text-color: #1E1507;
+  --text-color: #7C4D30;
   --heading-color: #66CDAD;
   --article-background: rgba(0, 0, 0, 0.7);
+  --heading-color-2: #F8D12A;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-color);
-  max-width: 1200px; /* Limit the width of the page */
-  margin: 0 auto; /* Center the page */
-  padding: 20px; /* Add some padding */
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 20px;
 }
 
-h1, h2 {
+h2 {
   color: var(--heading-color);
 }
 
 h1 {
-  font-size: 2.5em; /* Large size for main heading */
-  margin-bottom: 20px; /* Space below the heading */
+  color: #F8D12A;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 2em; /* Medium size for subheadings */
-  margin-top: 40px; /* Space above the subheading */
-  margin-bottom: 15px; /* Space below the subheading */
+  font-size: 2em; 
+  margin-top: 40px; 
+  margin-bottom: 15px;
 }
-
 p {
-  font-size: 1.1em; /* Slightly larger paragraph text */
-  margin-bottom: 20px; /* Space below paragraphs */
+  font-size: 1.1em; 
+  margin-bottom: 10px;
 }
 
 nav a {
   color: var(--text-color);
-  text-decoration: none; /* Remove underlines */
+  text-decoration: none; 
 }
 
 nav a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline; 
 }
 
 footer {
-  margin-top: 40px; /* Space above the footer */
+  margin-top: 40px;
   padding: 10px 0;
-  border-top: 1px solid #ddd; /* Subtle border above footer */
+  border-top: 1px solid #ddd; 
+  
 }
 
 footer p {
-  color: var(--secondary-color); /* Change copyright text color */
+  color: var(--heading-color); 
 }
 
 .sociallinks a {
-  margin: 0 10px; /* Space between social links */
-  text-decoration: none; /* Remove underlines from social links */
+  margin: 0 10px; 
+  text-decoration: none; 
 }
 
-/* Hero Styles */
 .hero {
   position: relative;
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh;
   background-image: url('path/to/your/hero-image.jpg');
-  background-size: cover; /* Cover the entire div */
-  background-position: center; /* Center the image */
-  color: white; /* Text color */
-  text-align: center; /* Center text */
+  background-size: cover;
+  background-position: center; 
+  color: white;
+  text-align: start;
 }
 
 .hero h1 {
-  position: absolute; /* Position absolutely within hero */
-  top: 20%; /* Adjust as needed */
+  position: absolute;
+  top: -1%;
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
+  transform: translateX(-50%);
+  background-color: var(--article-background);
+  padding: 10px;
 }
 
 article {
-  position: absolute; /* Position absolutely within hero */
-  bottom: 20px; /* Adjust as needed */
+  position: fixed;
+  bottom: 140px;
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
-  background-color: var(--article-background); /* Semi-transparent background */
-  padding: 20px; /* Padding for readability */
-  border-radius: 10px; /* Rounded corners */
-  max-width: 600px; /* Limit width of article */
-  color: white; /* Text color inside article */
+  transform: translateX(-50%);
+  background-color: var(--article-background);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  color: white;
 }
 
 article img {
-  float: right; /* Float image to the right of paragraph */
-  margin-left: 15px; /* Space between image and text */
-  max-width: 100px; /* Adjust size of the smaller image */
-  border-radius: 50%; /* Circular image */
+  float: right;
+  margin-left: 15px;
+  max-width: 300px; 
+  border-radius: 5%;
 }
