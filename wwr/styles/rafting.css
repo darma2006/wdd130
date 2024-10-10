@@ -1,13 +1,97 @@
 :root {
-    --primary-color: #66CDAD;
-    --secondary-color: #F8D12A;
-    --background-color: #FEFEFC;
-    --text-color: #1E1507;
-    --heading-color: #66CDAD;
+  --background-color: #f8f9fa;
+  --text-color: #1E1507;
+  --heading-color: #66CDAD;
+  --article-background: rgba(0, 0, 0, 0.7);
+}
 
-    font-family: 'merriweather', sans-serif;
-    background-color: var(--background-color);
-    max-width: 1200px;
-    margin: 0 auto;     /* Center the content */
-    padding: 20px;
-  }
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 1200px; /* Limit the width of the page */
+  margin: 0 auto; /* Center the page */
+  padding: 20px; /* Add some padding */
+}
+
+h1, h2 {
+  color: var(--heading-color);
+}
+
+h1 {
+  font-size: 2.5em; /* Large size for main heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+h2 {
+  font-size: 2em; /* Medium size for subheadings */
+  margin-top: 40px; /* Space above the subheading */
+  margin-bottom: 15px; /* Space below the subheading */
+}
+
+p {
+  font-size: 1.1em; /* Slightly larger paragraph text */
+  margin-bottom: 20px; /* Space below paragraphs */
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none; /* Remove underlines */
+}
+
+nav a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+footer {
+  margin-top: 40px; /* Space above the footer */
+  padding: 10px 0;
+  border-top: 1px solid #ddd; /* Subtle border above footer */
+}
+
+footer p {
+  color: var(--secondary-color); /* Change copyright text color */
+}
+
+.sociallinks a {
+  margin: 0 10px; /* Space between social links */
+  text-decoration: none; /* Remove underlines from social links */
+}
+
+/* Hero Styles */
+.hero {
+  position: relative;
+  height: 100vh; /* Full height of the viewport */
+  background-image: url('path/to/your/hero-image.jpg');
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the image */
+  color: white; /* Text color */
+  text-align: center; /* Center text */
+}
+
+.hero h1 {
+  position: absolute; /* Position absolutely within hero */
+  top: 20%; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+article {
+  position: absolute; /* Position absolutely within hero */
+  bottom: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  background-color: var(--article-background); /* Semi-transparent background */
+  padding: 20px; /* Padding for readability */
+  border-radius: 10px; /* Rounded corners */
+  max-width: 600px; /* Limit width of article */
+  color: white; /* Text color inside article */
+}
+
+article img {
+  float: right; /* Float image to the right of paragraph */
+  margin-left: 15px; /* Space between image and text */
+  max-width: 100px; /* Adjust size of the smaller image */
+  border-radius: 50%; /* Circular image */
+}
