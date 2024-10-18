@@ -1,100 +1,76 @@
 :root {
-  --background-color: #f8f9fa;
-  --text-color: #7C4D30;
-  --heading-color: #66CDAD;
-  --article-background: rgba(0, 0, 0, 0.7);
-  --heading-color-2: #F8D12A;
+  --primary-color: #f8d12a;
+  --secondary-color: #66cdad;
+  --font-body: 'Merriweader', sans-serif;
+  --font-heading: 'NTR', sans-serif;
 }
 
 body {
-  font-family: 'Merriweather', sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  max-width: 1200px;
-  margin: 0 auto; 
-  padding: 20px;
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
 }
 
-h2 {
-  color: var(--heading-color);
-}
-
-h1 {
-  color: #F8D12A;
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 2em; 
-  margin-top: 40px; 
-  margin-bottom: 15px;
-}
-p {
-  font-size: 1.1em; 
-  margin-bottom: 10px;
+header {
+  color: white;
+  padding: 1rem;
+  text-align: left;
 }
 
 nav a {
-  color: var(--text-color);
-  text-decoration: none; 
-}
-
-nav a:hover {
-  text-decoration: underline; 
-}
-
-footer {
-  margin-top: 40px;
-  padding: 10px 0;
-  border-top: 1px solid #ddd; 
-  
-}
-
-footer p {
-  color: var(--heading-color); 
-}
-
-.sociallinks a {
-  margin: 0 10px; 
-  text-decoration: none; 
+  margin: 0 15px;
+  color: #f8d12a;
+  text-decoration: none;
 }
 
 .hero {
   position: relative;
-  height: 100vh;
-  background-image: url('path/to/your/hero-image.jpg');
-  background-size: cover;
-  background-position: center; 
-  color: white;
-  text-align: start;
+  overflow: hidden;
 }
 
-.hero h1 {
+.hero-image {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  color: #f8d12a;
   position: absolute;
-  top: -1%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--article-background);
-  padding: 10px;
+  top: 5%;
+  left: 40%;
+  background-color: black transparent;
 }
 
 article {
-  position: fixed;
-  bottom: 140px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--article-background);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 900px;
+  position: absolute;
+  bottom: 75%;
+  left: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1%;
   color: white;
+  border-radius: 10px;
 }
 
-article img {
+.client-image {
   float: right;
-  margin-left: 15px;
-  max-width: 300px; 
-  border-radius: 5%;
+  margin-left: 1px;
+  max-width: 25%;
+}
+
+section h2 {
+  color: var(--secondary-color);
+}
+
+footer {
+  color: #66cdad;
+  text-align: left;
+  padding: 1rem;
+}
+
+footer a img {
+  width: 24px;
+  margin: 0 10px;
+  text-decoration: none;
 }
