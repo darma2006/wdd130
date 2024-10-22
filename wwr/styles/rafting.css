@@ -19,22 +19,29 @@ header {
   grid-template-columns: 200px 1fr 2fr;
 }
 
+nav { 
+  display: flex;
+  justify-content: flex-end;
+}
+
 nav a {
   margin: 0 15px;
   color: #f8d12a;
   text-decoration: none;
-  text-align: right;
 }
 
 .hero {
   position: relative;
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 2rem;
 }
 
 .hero-image {
   width: 100%;
   display: block;
   height: auto;
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -49,9 +56,10 @@ h1 {
 
 article {
   position: absolute;
-  bottom: 60%;
+  bottom: 70%;
   left: 11%;
   right: 10%;
+  border-radius: 10px;
   background-color: rgba(14, 15, 15, 0.479)
 }
 
@@ -68,20 +76,42 @@ article p{
 
 section h2 {
   color: var(--secondary-color);
-  padding: 20px;
+  flex: 1;
   text-align: center;
-}
-
-section p {
-  color: black;
+  margin-bottom: 1rem;
 }
 
 
 section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 3rem;
+}
+
+.history {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: #f8d12a;
+  border-radius: 10px;
+}
+
+
+.adventures {
+  position: relative;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #f8d12a;
+}
+
+.adventures h2 {
+  position: absolute; 
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: #66cdad;
 }
 
 
@@ -98,11 +128,12 @@ figcaption {
 }
 
 footer {
-  color: #66cdad;
+  color: #7c4d30;
   text-align: left;
   padding: 1rem;
   display: flex;
   justify-content: right;
+  background-color: var(--secondary-color);
 }
 
 footer a img {
