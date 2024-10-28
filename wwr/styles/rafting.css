@@ -6,7 +6,6 @@
 }
 
 body {
-  font-family: var(--font-body);
   margin: 0;
   padding: 0;
 }
@@ -24,16 +23,12 @@ nav {
   justify-content: flex-end;
 }
 
-figure {
+.Employee {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.information fieldset{
-  display: flex;
-  flex-direction: column;
-}
 
 nav a {
   margin: 0 50px;
@@ -61,7 +56,6 @@ main h1 {
 }
 
 h1 {
-  font-family: var(--font-heading);
   color: #f8d12a;
   position: absolute;
   top: 1%;
