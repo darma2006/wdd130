@@ -9,6 +9,46 @@ nav a {
     padding: 20px;
 }
 
+.hero {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+.hero-image {
+   width: 100%;
+   display: block;
+   height: auto;
+   margin-bottom: 2rem;
+ }
+  
+.hero h1 {
+    color: #f8d12a;
+    position: absolute;
+    top: 1%;
+    left: 40%;
+    background-color: black;
+    padding: 10px;
+  }
+
+  .newsletter, .cta {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
 h1 {
     color: steelblue;
 }
