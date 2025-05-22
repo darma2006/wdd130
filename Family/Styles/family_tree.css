@@ -1,83 +1,59 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background: #f9f9f9;
-  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  margin: 20px;
 }
 
 h1 {
-  margin-bottom: 40px;
-  color: #333;
-}
-
-.tree ul {
-  padding-top: 20px;
-  position: relative;
-  display: table;
-  margin: 0 auto;
-}
-
-.tree li {
-  display: table-cell;
   text-align: center;
-  vertical-align: top;
-  position: relative;
-  padding: 20px 5px 0 5px;
+  margin-bottom: 40px;
 }
 
-.tree li::before, .tree li::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  border-top: 1px solid #ccc;
-  width: 50%;
-  height: 20px;
+.family-tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
-.tree li::before {
-  right: 50%;
-  border-right: 1px solid #ccc;
+.generation.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.tree li::after {
-  left: 50%;
-  border-left: 1px solid #ccc;
+.family {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.tree li:only-child::before,
-.tree li:only-child::after {
-  display: none;
+.children {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-.tree li:only-child {
-  padding-top: 0;
+.person {
+  background: #ffffff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 8px 14px;
+  min-width: 100px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
-.tree li:first-child::before,
-.tree li:last-child::after {
-  border: none;
+.gen1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #ffd166;
 }
 
-.tree li:last-child::before {
-  border-radius: 0 5px 0 0;
+.gen2 {
+  background-color: #06d6a0;
+  font-weight: bold;
 }
 
-.tree li:first-child::after {
-  border-radius: 5px 0 0 0;
-}
-
-.member {
-  border: 1px solid #ccc;
-  background-color: #fff;
-  padding: 10px 15px;
-  display: inline-block;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.member:hover {
-  background-color: #f0f0f0;
-  transform: scale(1.05);
-}
