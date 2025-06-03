@@ -211,3 +211,38 @@ footer .socialmedia img {
     width: 40px;
     height: auto;
 }
+
+
+.contact-info, .employees, .contact-form {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.employee-gallery img {
+    width: 150px;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+form button {
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

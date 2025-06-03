@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darma López Solis | WDD130 | Contact Us</title>
+    <meta name="description" content="Contact Sol Rapids Rafting. Find our address, phone, email, and get in touch using the contact form. Plan your next adventure with us!">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/Rafting-site-logo.jpg" alt="Rafting Company Logo">
+        <h1>Sol Rapids Rafting</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Trips</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <main>
+    <section class="contact-info">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> 123 Rapids Lane, River City, RC 80000</p>
+        <p><strong>Phone:</strong> +1 (800) 555-RAFT</p>
+        <p><strong>Email:</strong> info@solrapids.com</p>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section class="employees">
+        <h2>Meet Our Team</h2>
+        <div class="employee-gallery">
+            <figure>
+                <img src="images/employee_1.jpg" alt="Smiling Employee 1" width="300">
+                <figcaption>Jane Doe - Lead Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee_2.jpg" alt="Smiling Employee 2" width="300">
+                <figcaption>John Smith - Safety Coordinator</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee_3.jpg" alt="Smiling Employee 3" width="300">
+                <figcaption>Emily Rivera - Booking Specialist</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post">
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="useremail">Email:</label>
+            <input type="email" id="useremail" name="useremail" required>
+
+            <p>Purpose of Message:</p>
+            <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
+            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+            <label for="usermessage">Message:</label>
+            <textarea id="usermessage" name="usermessage" rows="5" required></textarea>
+
+            <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+
+    <footer>
+    <p>©2025 | Sol Rapids Rafting 👻 Darma López 👻</p>
+    <nav class="socialmedia">
+        <a href="https://facebook.com">
+            <img src="images/facebookj.jpg" alt="facebook logo" width="40">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram.jpg" alt="instagram logo" width="40">
+        </a>
+        <a href="https://twitter.com">
+            <img src="images/twitter.jpg" alt="twitter logo" width="40">
+        </a>
+    </nav>
+    </footer>
+</body>
+</html>
