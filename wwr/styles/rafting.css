@@ -314,3 +314,11 @@ form button {
     border: none;
     cursor: pointer;
 }
+
+
+/* Layout container for centering and responsiveness */
+.content-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
